@@ -16,6 +16,7 @@ namespace TetrisGame
             if (!isValidGridPos())
             {
                 Debug.Log("GAME OVER");
+                FindObjectOfType<TetrisScoreKeeper>().GameOver();
                 Destroy(gameObject);
             }
         }

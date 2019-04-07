@@ -69,6 +69,7 @@ namespace TetrisGame
                 if (isRowFull(y))
                 {
                     deleteRow(y);
+                    FindObjectOfType<TetrisScoreKeeper>().IncreaseScore();
                     decreaseRowsAbove(y + 1);
                     --y;
                 }

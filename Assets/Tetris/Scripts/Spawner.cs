@@ -30,7 +30,7 @@ namespace TetrisGame
             // Spawn Group at current Position
             Instantiate(groups[i],
                         transform.position,
-                        Quaternion.identity);
+                        Quaternion.identity,this.transform);
         }
     }
 }
